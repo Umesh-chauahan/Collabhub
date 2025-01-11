@@ -1,0 +1,900 @@
+/* General Reset and Body Styles */
+
+
+/* Form Container */
+.fform {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+  margin-left: 380px;
+  border: 1px solid black;
+}
+
+/* Form Title */
+.form-title {
+  
+  text-align: center;
+  font-size: 2em;
+  color: #0915c0;
+  margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 1.1em;
+  color: #353434;
+  display: block;
+  margin-bottom: 10px;
+  font-weight:700;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #949393;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #333;
+  font-weight: 500;
+}
+
+.input[type="date"],
+.input[type="time"] {
+  font-size: 1.1em;
+}
+
+.textarea {
+  min-height: 50px;
+  resize: vertical;
+}
+
+/* Focus State for Inputs */
+.input:focus,
+.textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button Styles */
+button.submit-button {
+  background-color: #1bf5a1;
+  color: rgb(14, 13, 13);
+  font-size: 1.3em;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+button.submit-button:hover {
+  background-color: #06915b;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+  .fform {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .form-title {
+    font-size: 1.8em;
+  }
+
+  .input,
+  .textarea {
+    font-size: 1em;
+  }
+}
+
+
+
+
+
+/* Global Styles */
+/* Global Style/* Global Styles */
+/* Global Styles */
+/* Global Styles */
+/* Global Styles */
+/* In your CSS file */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+}
+
+.loading::after {
+  content: '';
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+/* Section Titles for Upcoming and Past Events */
+.section-title {
+  font-size: 2em;
+  margin: 10px 0 30px;
+  text-align: center;
+  color: #fffdfd;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Event List Wrapper */
+.events-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Individual Event Card */
+.event-item {
+  background-color:white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 300px;
+  
+}
+
+/* Styling for Upcoming Events */
+.upcoming-event {
+  border-left: 10px solid #016405; /* Green color for upcoming events */
+}
+
+/* Styling for Past Events */
+.past-event {
+  border-left: 10px solid #910c03; /* Red color for past events */
+  background-color: #f8f8f8; /* Light background for past events */
+}
+
+/* Event Name */
+.event-name {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #161616;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Important Event Details - Top Layout (Inline Horizontal) */
+.event-top {
+  display: flex;
+   /* Space out the items (details and button) */
+   /* Vertically center the items */
+  margin-bottom: 20px;
+  width: 100%; /* Make sure the container spans the full width */
+}
+
+.event-top div {
+  margin: 10px 5px 5px 50px;
+  min-width: 350px;
+  font-size: 1.1em;
+  color: #555;
+  
+  /* Center the text inside the divs */
+}
+
+.event-top div strong {
+  font-weight: bold;
+}
+
+/* Styling for the Register Button */
+.register-button {
+  background-color: #046407; /* Green background for active button */
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  min-width: 150px; /* Ensures a minimum button width */
+  max-width: 200px; /* Prevents button from growing too large */
+  margin-left: 475px; /* Adds some space between the event details and the button */
+}
+.feedback-button{
+  background-color: #f10606; /* Blue background for active button */
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  min-width: 150px; /* Ensures a minimum button width */
+  max-width: 200px; /* Prevents button from growing too large */
+  margin-left: 475px; /* Adds some space between the event details and the button */
+}
+/* Hover effect for Register button */
+.register-button:hover {
+  background-color: #45a049; /* Darker green when hovering */
+}
+
+/* Disabled state for Register button */
+.register-button:disabled {
+  background-color: #e78888; /* Grey out button when disabled */
+  cursor: not-allowed;
+}
+
+/* Important Event Details - Bottom Layout */
+.event-bottom {
+  display: flex;
+   /* Distribute items evenly */
+  margin-bottom: 20px;
+  /* Center the text */
+}
+
+.event-bottom div {
+  min-width: 350px;
+  font-size: 1.1em;
+  color: #555;
+  margin: 30px 5px 10px 50px;
+  margin-bottom: 10px;
+}
+
+.event-bottom div strong {
+  font-weight: bold;
+}
+
+/* No Events Available Message */
+.no-events-message {
+  font-size: 1.2em;
+  color: #777;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .event-top, .event-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .event-top div, .event-bottom div {
+    margin-bottom: 10px;
+    text-align: left; /* Align text to the left for smaller screens */
+  }
+
+  .event-item {
+    width: 90%; /* Adjust event card width on smaller screens */
+    height: auto; /* Allow the card height to adjust on smaller screens */
+  }
+
+  .register-button {
+    width: 80%; /* Adjust register button size for small screens */
+    max-width: 300px; /* Limit the button width on small screens */
+    margin-left: 0; /* Remove the left margin */
+  }
+}
+
+
+
+
+.register-form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-form-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.register-form-divider {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.register-form-group {
+  margin-bottom: 15px;
+}
+
+.register-label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.register-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.register-radio-group {
+  display: flex;
+  gap: 50px;
+}
+
+.register-submit-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-submit-button:hover {
+  background-color: #45a049;
+}
+
+.register-message {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  color: green;
+}
+.register-add-member-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 0px 0 10px 0;
+  border-radius: 5px;
+}
+
+.register-add-member-btn:hover {
+  background-color: #0056b3;
+}
+
+button.register-add-member-btn:disabled {
+  background-color: #77c4db;  /* Light gray background */
+  color: #f8f5f5;  /* Light gray text */
+  cursor: not-allowed;  /* Show "not-allowed" cursor */
+}
+
+.register-input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.laabel
+{
+  font-size: 1.1em;
+  color: #353434;
+  font-weight:500;
+}
+
+.radio{
+  margin: 10px;
+ width: 15px;
+ height: 15px;
+}
+
+
+
+
+
+
+
+/* General wrapper for the MyEvents component */
+.my-events-wrapper {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for the section */
+.my-events-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 35px;
+  color: #fcfafa;
+  text-align: center;
+}
+
+/* Error message style */
+.error-alert {
+  color: #ff0000;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style when no events are found */
+.no-events-found {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  font-style: italic;
+}
+
+/* List of events */
+.my-events-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Individual event item */
+.event-card {
+  background-color: #ffffff;
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Responsive design: Ensure good layout on small screens */
+@media (max-width: 768px) {
+  .my-events-wrapper {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .my-events-header {
+    font-size: 1.5rem;
+  }
+
+  .event-card {
+    padding: 10px;
+  }
+
+  .event-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .event-card p {
+    font-size: 0.9rem;
+  }
+}
+
+.div1{
+  min-width: 300px;
+}
+
+.divs{
+  display: flex;
+  width: 100%;
+}
+.div2{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: #0a0a0a;
+  color: #fffbfb;
+  padding: 5px;
+  min-width: 106px;
+}
+.div4{
+  margin-left: 250px;
+  margin-bottom: 20px;
+  background-color: #0a0a0a;
+  color: #fffbfb;
+  padding: 5px;
+  min-width: 80px;
+}
+
+
+
+/* Global Styles */
+.foorm{
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+  margin-left: 380px;
+  border: 1px solid black;
+  height: 500px;
+}
+
+/* General Page Styles */
+.app-container {
+  font-family: 'Arial', sans-serif;
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* Heading Styles */
+
+
+/* Question Section Styles */
+.question-section {
+  width: 80%;
+  max-width: 900px;
+  margin-bottom: 40px;
+  color: #f1f1f1;
+}
+
+.question-item {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.question-text {
+  font-size: 1.6em;
+  color: #02073a;
+  font-style: italic;
+
+}
+.em{
+  color: #d4d2d2;
+  font-size: 1.2em;
+font-style: italic;
+}
+.hh6{
+  color: #f4f4f7;
+  font-size: 15px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+.question-by{
+  color: rgb(7, 16, 145);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.answer-button {
+  padding: 10px 20px;
+  background-color: #0a0a0a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.answer-button:hover {
+  background-color: #0056b3;
+}
+
+/* Answer Section Styles */
+.answer-section {
+  font-size: 1.1em;
+  color: #92031b;
+  margin-top: 15px;
+}
+
+.answer-item {
+  background-color: #020011;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Answer Form Styles */
+/* Styling for the textarea with class 'custom-textarea' */
+.ask-question-sections{
+  position: relative;   /* Ensure button can be positioned inside this container */
+    width: 100%;          /* Full width */    /* Optional: Set a max width for the container */
+    margin: 0 auto; 
+}
+.custom-textarea {
+  width: 95%;             /* Make textarea take up full width */
+  height: 50px;           /* Set a height for the textarea */
+  padding: 10px;           /* Add padding inside textarea */
+  font-size: 16px;         /* Set font size */
+  border: 2px solid #0a06db;  /* Light grey border */
+  border-radius: 5px;      /* Rounded corners */
+  resize: vertical;        /* Allow vertical resize */
+  box-sizing: border-box;  /* Include padding and border in the width and height */
+  transition: border-color 0.3s ease;
+  margin-top: 10px; /* Smooth transition on focus */
+}
+
+/* Styling when the textarea is focused */
+.custom-textarea:focus {
+   /* Change border color on focus */
+  outline: none;         /* Remove outline on focus */
+}
+
+.custom-button i {
+  font-size: 35px;
+}
+/* Styling for the button with class 'custom-button' */
+.custom-button {
+  bottom: 12px; 
+  right: 0px;        /* 10px from the bottom of the textarea */    
+  position: absolute;
+       /* Add padding around the button */        /* Set font size */
+  color: rgb(13, 14, 13);           /* Set text color */
+  background-color: #fff;/* Set background color */
+  border: none;           /* Remove border */
+  border-radius: 95%;     /* Rounded corners */
+  cursor: pointer;       /* Change cursor to pointer */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Styling when the button is hovered */
+.custom-button:hover {
+  background-color: #eceeec; /* Darker green on hover */
+}
+
+
+/* Ask New Question Section Styles */
+.ask-question-section {
+  position: fixed;
+  background-color: rgba(235, 212, 8, 0.993);
+  bottom:1px; /* Keeps it 20px from the bottom of the viewport */
+  left: 50%;
+  transform: translateX(-50%); 
+  overflow:auto;
+  margin-top: 50px;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  width: 67%;
+  display: flex;
+ border: 1px solid black;
+  gap: 50px;
+}
+
+.ask-question-textarea {
+  width: 94%;
+  height: 60px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid lightslategray;
+  font-size: 1.1rem;
+  resize: none;
+}
+
+.ask-question-btn {
+  bottom: 25px;         /* 10px from the bottom of the textarea */
+  right: 10px;    
+  position: absolute;
+       /* Add padding around the button */        /* Set font size */
+  color: rgb(211, 7, 7);           /* Set text color */
+  background-color: #fff;/* Set background color */
+  border: none;           /* Remove border */
+  border-radius: 95%;     /* Rounded corners */
+  cursor: pointer;       /* Change cursor to pointer */
+  transition: background-color 0.3s ease;
+}
+.ask-question-btn i{
+  font-size: 50px;
+}
+
+.ask-question-btn:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 768px) {
+  .ask-question-section {
+    flex-direction: column;  /* Stack vertically on smaller screens */
+    gap: 10px;               /* Less space between textarea and button */
+  }
+
+  .ask-question-textarea {
+    width: 100%;  /* Make textarea full-width on smaller screens */
+  }
+}
+
+
+
+.answer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.answer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%; /* Adjust width as needed */
+}
+
+.vote-buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Adds some spacing between the vote buttons and the answer */
+}
+
+.vote-buttons i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.vote-count {
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.answer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.answer-actions button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+/* General styles for the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  padding: 20px;
+}
+
+/* Container for the entire component */
+.event-attendees-container {
+  max-width: 1200px;
+  min-height: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+/* General Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures no space between table cells */
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd; /* Border between cells */
+}
+
+th {
+  background-color: #007bff; /* Blue background for table headers */
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  text-align: left; /* Align text to the left by default */
+}
+
+td.centered {
+  text-align: center; /* Center the content in the 'centered' class */
+}
+
+/* Center the content within the first column (index column) */
+td:first-child {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Style for empty attendees message */
+.no-attendees {
+  color: #555;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Responsive Styles for smaller screens */
+@media (max-width: 768px) {
+  th, td {
+    padding: 8px 10px;
+  }
+
+  /* Stack the table headers vertically for smaller screens */
+  th, td {
+    font-size: 0.9rem;
+  }
+
+  .event-attendees-container {
+    padding: 10px;
+  }
+}
+
+.approve{
+  background-color: #0bf13d;
+  border-radius: 50%;
+  border: none;
+}
+.approve i{
+  font-size: 35px;
+  
+}
+.reject{
+  background-color: #f10b0b;
+  border-radius: 50%;
+  border: none;
+  
+}
+.reject i{
+  font-size: 35px;
+}
