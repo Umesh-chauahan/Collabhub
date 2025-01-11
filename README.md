@@ -42,58 +42,55 @@ Make sure you have the following installed:
 
    ```bash
    git clone https://github.com/your-username/collabhub.git
-Navigate to the backend directory
+2.Navigate to the backend directory:
+
 cd collabhub/backend
 
-Install the backend dependencies:
+3.Install the backend dependencies:
+
 npm install
 Create a .env file in the backend directory and configure your MongoDB connection
 
 MONGO_URI=mongodb://localhost:27017/collabhub
 JWT_SECRET=your_jwt_secret_key
 
-Run the backend server:
+4.Run the backend server:
 npm start
 The backend will be available on http://localhost:5000.
 
-Frontend Setup
-Navigate to the frontend director
+###Frontend Setup:
+1.Navigate to the frontend director
 cd ../frontend
 
-Install the frontend dependencies:
+2.Install the frontend dependencies:
 npm install
 
-Run the frontend application:
+3.Run the frontend application:
 npm run dev
 The frontend will be available on http://localhost:3000.
 
-API Endpoints
+4.API Endpoints
 GET /api/events: Fetch all events.
 POST /api/events: Create a new event.
 GET /api/studygroups: Get available study groups.
 POST /api/questions: Post a question.
 GET /api/questions: Get all questions.
 
-Contributing
+##Contributing
 We welcome contributions to improve CollabHub. To contribute:
 
-Fork the repository.
+##Fork the repository.
 Create a new branch (git checkout -b feature-branch).
 Commit your changes (git commit -am 'Add new feature').
 Push to the branch (git push origin feature-branch).
 Open a pull request to the main repository.
-License
+###License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgements
+###Acknowledgements
 Built with the help of the MERN stack and Socket.IO for real-time communication.
 Inspired by the need for a collaborative academic platform.
 CollabHub - Building better academic collaboration for students and faculty!
-
-yaml
-Copy code
-
----
 
 ### Customization Notes:
 - Replace `https://github.com/your-username/collabhub.git` with your actual GitHub repository URL.
