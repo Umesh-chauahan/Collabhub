@@ -42,44 +42,28 @@ Make sure you have the following installed:
 
    ```bash
    git clone https://github.com/your-username/collabhub.git
-Navigate to the backend directory:
-
-bash
-Copy code
+Navigate to the backend directory
 cd collabhub/backend
+
 Install the backend dependencies:
-
-bash
-Copy code
 npm install
-Create a .env file in the backend directory and configure your MongoDB connection:
+Create a .env file in the backend directory and configure your MongoDB connection
 
-env
-Copy code
 MONGO_URI=mongodb://localhost:27017/collabhub
 JWT_SECRET=your_jwt_secret_key
-Run the backend server:
 
-bash
-Copy code
+Run the backend server:
 npm start
 The backend will be available on http://localhost:5000.
 
 Frontend Setup
-Navigate to the frontend directory:
-
-bash
-Copy code
+Navigate to the frontend director
 cd ../frontend
+
 Install the frontend dependencies:
-
-bash
-Copy code
 npm install
-Run the frontend application:
 
-bash
-Copy code
+Run the frontend application:
 npm run dev
 The frontend will be available on http://localhost:3000.
 
@@ -89,29 +73,7 @@ POST /api/events: Create a new event.
 GET /api/studygroups: Get available study groups.
 POST /api/questions: Post a question.
 GET /api/questions: Get all questions.
-Example
-Create Event (POST request):
-Request body:
 
-json
-Copy code
-{
-  "title": "Math Study Session",
-  "date": "2025-01-15",
-  "description": "A study session for upcoming math exams",
-  "organizer": "Student123"
-}
-Response:
-
-json
-Copy code
-{
-  "_id": "60c72b1f9f1b2c001f7e91a6",
-  "title": "Math Study Session",
-  "date": "2025-01-15",
-  "description": "A study session for upcoming math exams",
-  "organizer": "Student123"
-}
 Contributing
 We welcome contributions to improve CollabHub. To contribute:
 
