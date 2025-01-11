@@ -58,7 +58,7 @@ JWT_SECRET=your_jwt_secret_key
 npm start
 The backend will be available on http://localhost:5000.
 
-### Frontend Setup:
+## Frontend Setup:
 1. Navigate to the frontend director
 cd ../frontend
 
@@ -76,7 +76,7 @@ GET /api/studygroups: Get available study groups.
 POST /api/questions: Post a question.
 GET /api/questions: Get all questions.
 
-## Contributing
+### Contributing
 We welcome contributions to improve CollabHub. To contribute:
 
 ## Fork the repository.
@@ -84,10 +84,10 @@ Create a new branch (git checkout -b feature-branch).
 Commit your changes (git commit -am 'Add new feature').
 Push to the branch (git push origin feature-branch).
 Open a pull request to the main repository.
-### License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Acknowledgements
+## Acknowledgements
 Built with the help of the MERN stack and Socket.IO for real-time communication.
 Inspired by the need for a collaborative academic platform.
 CollabHub - Building better academic collaboration for students and faculty!
