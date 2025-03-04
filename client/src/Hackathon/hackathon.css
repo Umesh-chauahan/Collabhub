@@ -138,7 +138,7 @@ button.submit-button:hover {
   font-size: 2em;
   margin: 10px 0 30px;
   text-align: center;
-  color: #fffdfd;
+  color:#03626b;
   text-transform: uppercase;
   letter-spacing: 1px;
   border-bottom: 2px solid #ddd;
@@ -184,7 +184,7 @@ button.submit-button:hover {
 .event-name {
   font-size: 1.8em;
   font-weight: bold;
-  color: #161616;
+  color: #001a60;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -213,13 +213,13 @@ button.submit-button:hover {
 
 /* Styling for the Register Button */
 .register-button {
-  background-color: #046407; /* Green background for active button */
+  background-color: #f7a400; /* Green background for active button */
   color: white;
   border: none;
   text-align: center;
   text-decoration: none;
   padding: 10px 20px;
-  font-size: 1.2em;
+  font-size: 1.4em;
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s ease;
@@ -433,7 +433,7 @@ button.register-add-member-btn:disabled {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 35px;
-  color: #fcfafa;
+  color: #036d70;
   text-align: center;
 }
 

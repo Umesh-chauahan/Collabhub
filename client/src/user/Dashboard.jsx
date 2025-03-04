@@ -16,39 +16,18 @@ const Dashboard = () => {
 
   return (
     <Layout title="Dashboard">
-      <div className="dashboard-container">
-        <div className="dashboard-content">
-          <h1>Welcome to your Dashboard</h1>
-          {user ? (
-            <div className="welcome-message">
-              <p>Hello, {user.user.name}! You are logged in.</p>
-              <Link to={`/profile/${user.user._id}`} className="btn-profile">
-                Go to Profile
-              </Link>
-            </div>
-          ) : (
-            <div className="auth-buttons">
-              <p>Please log in to access your dashboard</p>
-              <Link to="/login" className="btn-login">
-                Login
-              </Link>
-              <Link to="/register" className="btn-register">
-                Register
-              </Link>
-            </div>
-          )}
+      <div className="dash-container">
+        <div className="dash1">
+          <div className="text">
+          <h1 className='learn'>Learn</h1>
+          <h1 className='learn'>Explore</h1>
+          <h1 className='learn'>UpSkill</h1>
 
-          <div className="info-section">
-            <h2>Your Activities</h2>
-            <p>Here are some of the activities you can manage in the dashboard:</p>
-            <ul>
-              <li>Manage Events</li>
-              <li>Create Collaborations</li>
-              <li>Join Study Groups</li>
-              <li>Participate in Q&A</li>
-            </ul>
+          <p className='pop'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vel recusandae dicta voluptatum rem culpa, assumenda repellendus voluptate. Animi deleniti optio quo odio ullam veniam ad ipsam itaque eveniet voluptas.</p>
           </div>
         </div>
+       
+        <div className="dash2">2</div>
       </div>
     </Layout>
   );

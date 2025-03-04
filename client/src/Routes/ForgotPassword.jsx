@@ -48,8 +48,8 @@ const ForgotPassword = () => {
        <label className="laable"><p className="u">New Password :</p><input className='username'
           
           type="password"
-          value={FormData.password}
-          name="password"
+          value={FormData.newPassword}
+          name="newPassword"
          
           onChange={onchange}
         />
