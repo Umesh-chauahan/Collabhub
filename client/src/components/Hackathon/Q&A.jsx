@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Layout from '../Layout/Layout';
+import Layout from '../../Layout/Layout';
 import axios from 'axios';
-import { useAuth } from '../context/authContext';
+import { useAuth } from '../../context/authContext';
 
 function QandA() {
   const [auth, setAuth] = useAuth();

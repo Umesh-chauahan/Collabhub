@@ -13,7 +13,7 @@ const Layout = ({children , author,keywords,description,title,onSearch}) => {
                 <meta name="description" content={description} />
       </Helmet>
       <Header onSearch={onSearch}/>
-      <main className="main-container"style={{minHeight:'100vh'}}>
+      <main >
         {children}
       </main>
       

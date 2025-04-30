@@ -1,7 +1,7 @@
 import {useState } from "react";
 import axios from 'axios'
 import {NavLink, useNavigate } from "react-router-dom";
-import Layout from "../Layout/Layout";
+import Layout from "../../Layout/Layout";
 
 const ForgotPassword = () => {
   const [FormData,setFormData] = useState({ email: '',name:'', newPassword: '' })

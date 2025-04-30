@@ -1,11 +1,5 @@
-.logo{
-    background-image: url('./assets/logo.png');
-    width: 115px;
-    height: 85px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
+@import "tailwindcss";
+
 /* SearchBar.css */
 .search-bar-container {
   display: flex;
@@ -142,15 +136,7 @@ li{
 .text-center{
   margin: 0;
 }
-.container{
-    background-color: rgb(142, 165, 184);
-    min-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    position: sticky;
-    bottom: 0;
-    z-index: 1000;
-}
+
 .nav-links{
     color: white !important;
 }
@@ -260,13 +246,7 @@ li{
   font-size: 19px;
 }
 
-.main-container {
-  flex-grow: 1;  /* Allow content to take up remaining space */
-  padding-top: 80px; /* Ensure content doesn't overlap with sticky header */
-  padding-bottom: 80px; /* Ensure content doesn't overlap with sticky footer */
-  overflow: auto; 
-   /* Ensure scrolls within the content area */
-}
+
 
 
 

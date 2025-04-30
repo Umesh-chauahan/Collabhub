@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './hackathon.css'
-import Layout from '../Layout/Layout';
+import Layout from '../../Layout/Layout';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/authContext';
+import { useAuth } from '../../context/authContext';
 
 const CreateEvent = () => {
   const [auth,setAuth ] = useAuth();

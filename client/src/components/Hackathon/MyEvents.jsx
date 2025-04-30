@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './hackathon.css';
-import Layout from '../Layout/Layout';
+import Layout from '../../Layout/Layout';
 import { useParams,useNavigate } from 'react-router-dom';
 import axios from 'axios'
-import { useAuth } from '../context/authContext';
+import { useAuth } from '../../context/authContext';
 
 const MyEvents = () => {
   const navigate= useNavigate()

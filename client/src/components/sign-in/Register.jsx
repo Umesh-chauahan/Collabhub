@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 import axios from "axios";
-import Layout from "../Layout/Layout";
+import Layout from "../../Layout/Layout";
 import { NavLink, useNavigate,useParams} from "react-router-dom";
 
 //Register

@@ -1,8 +1,8 @@
 import {useState } from "react";
 import axios from 'axios'
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import Layout from "../Layout/Layout";
-import { useAuth } from "../context/authContext";
+import Layout from "../../Layout/Layout";
+import { useAuth } from "../../context/authContext";
 
 const Login = ()=>{
     const [FormData,setFormData] = useState({ email: '', password: '',Role:'' })

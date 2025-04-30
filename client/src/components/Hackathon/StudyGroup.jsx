@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import Layout from '../Layout/Layout';
+import Layout from '../../Layout/Layout';
 
 function StudyGroup() {
     const [events, setEvents] = useState([]);

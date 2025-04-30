@@ -15,10 +15,6 @@ const UserSchema = new mongoose.Schema({
         type : String,
         required : true
     },
-    answer :{
-        type : String,
-        required : true
-    },
     Role :{
         type : String,
         required : true

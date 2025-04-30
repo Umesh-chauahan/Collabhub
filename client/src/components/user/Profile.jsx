@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { useState, useEffect,} from 'react';
-import { useAuth } from '../context/authContext'
+import { useAuth } from '../../context/authContext'
 import { NavLink, useParams,useNavigate, } from "react-router-dom";
-import Layout from "../Layout/Layout";
+import Layout from "../../Layout/Layout";
 
 
 const Profile = () => {
